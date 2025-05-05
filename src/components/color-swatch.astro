@@ -1,0 +1,45 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'div'> {
+  heading: string;
+  property: string;
+}
+
+const { heading, property, ...attrs } = Astro.props;
+---
+
+<div class="color-swatch" {...attrs}>
+  <div
+    style={{ backgroundColor: `var(${property})` }}
+    class="color-swatch__sample"
+  >
+  </div>
+  <div class="color-swatch__text">
+    <p class="color-swatch__heading">{heading}</p>
+    <code class="color-swatch__var">{property}</code>
+  </div>
+</div>
+
+<style>
+  .color-swatch {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: var(--spacing-4);
+    padding: var(--spacing-3);
+    background-color: var(--color-container);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow);
+
+    & .color-swatch__sample {
+      border-radius: var(--radius-m);
+      border: solid 2px var(--color-outline);
+      height: 6rem;
+      aspect-ratio: 1 / 1;
+    }
+
+    & .color-swatch__heading {
+      margin-block-end: var(--spacing-2);
+    }
+  }
+</style>

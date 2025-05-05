@@ -1,0 +1,407 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ColorSwatch from '../components/color-swatch.astro';
+import IconGithub from '../components/IconGithub.astro';
+import IconNpm from '../components/IconNpm.astro';
+import IconFeather from '../components/IconFeather.astro';
+import IconBlocks from '../components/IconBlocks.astro';
+import IconCode from '../components/IconCode.astro';
+import IconEdge from '../components/IconEdge.astro';
+import IconChrome from '../components/IconChrome.astro';
+import IconSafari from '../components/IconSafari.astro';
+import IconFirefox from '../components/IconFirefox.astro';
+import IconOpera from '../components/IconOpera.astro';
+import Card from '../components/Card.astro';
+import Section from '../components/Section.astro';
+import FlagCard from '../components/FlagCard.astro';
+
+const pageTitle = '@moonjellydigital Pride Flags';
+const description =
+  'A pure CSS package that lets you easily add pride flag designs to your web projects.';
+const currYear = new Date().getFullYear();
+---
+
+<BaseLayout pageTitle={pageTitle} description={description}>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <h1 class="site-title">
+        <span class="text-small">@moonjellydigital</span><span
+          class="text-display">Pride Flags</span
+        >
+      </h1>
+      <p class="text-subtitle1">
+        Add beautiful pride flag designs to your web projects with just a few
+        lines of code.
+      </p>
+      <div class="project-links">
+        <a class="btn" href="https://github.com/moonjellydigital/pride-flags">
+          <IconGithub />
+          GitHub
+        </a>
+        <a
+          class="btn"
+          href="https://npmjs.com/package/@moonjellydigital/pride-flags"
+        >
+          <IconNpm />
+          NPM
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <Section>
+      <h2 id="features">Features</h2>
+      <div class="card-grid features">
+        <Card>
+          <IconFeather size={36} />
+          <h3>Lightweight</h3>
+          <p>1.5KB minified and gzipped. No dependencies, just pure CSS.</p>
+        </Card>
+        <Card>
+          <IconBlocks size={36} />
+          <h3>Integrates With Any Project</h3>
+          <p>
+            Since Pride Flags is just CSS, you can use it with any framework or
+            CMS, and with website builders like Shopify and Squarespace.
+          </p>
+        </Card>
+        <Card>
+          <IconCode size={36} />
+          <h3>Customizable</h3>
+          <p>
+            All of the colors and flag gradients are available as CSS custom
+            properties if you want to build your own classes for a special
+            design.
+          </p>
+        </Card>
+      </div>
+    </Section>
+    <Section>
+      <h2 id="browser-support">Browser Support</h2>
+      <p>Pride Flags supports the listed browsers without any transpilation.</p>
+      <p class="browser-support"><IconChrome /> Chrome 111+</p>
+      <p class="browser-support"><IconEdge /> Edge 111+</p>
+      <p class="browser-support"><IconSafari /> Safari 15.4+</p>
+      <p class="browser-support"><IconSafari /> Safari on iOS 15.4+</p>
+      <p class="browser-support"><IconFirefox /> Firefox 113+</p>
+      <p class="browser-support"><IconOpera /> Opera 97+</p>
+    </Section>
+    <Section>
+      <h2 id="installation">Installation</h2>
+      <p>npm: <code>npm install @moonjellydigital/pride-flags</code></p>
+      <p>pnpm: <code>pnpm add @moonjellydigital/pride-flags</code></p>
+      <p>yarn: <code>yarn add @moonjellydigital/pride-flags</code></p>
+      <p>bun: <code>bun add @moonjellydigital/pride-flags</code></p>
+    </Section>
+    <Section>
+      <h2 id="usage">Usage</h2>
+      <h3>Importing</h3>
+      <p>
+        In a stylesheet: <code
+          >@import
+          url('node_modules/@moonjellydigital/pride-flags/pride-flags.css');</code
+        >
+      </p>
+      <p>
+        In the document head: <code
+          >&lt;link rel="stylesheet"
+          href="node_modules/@moonjellydigital/pride-flags/pride-flags.css"&gt;</code
+        >
+      </p>
+      <p>
+        In a component file: <code
+          >import 'node_modules/@moonjellydigital/pride-flags/pride-flags.css;'</code
+        >
+      </p>
+      <h3>Applying CSS</h3>
+      <p>
+        Both ready-to-use classes and CSS custom properties are available. The
+        classes and custom properties are listed under each flag design in the <a
+          href="#flags">Flags</a
+        > section. The custom properties for each color are listed in the <a
+          href="#color-swatches">Color Swatches</a
+        > section if you want to make your own design.
+      </p>
+      <p>
+        With the exception of the Progress design, flags have classes with an
+        aspect ratio and without. Classes without an aspect ratio will conform
+        to whatever dimensions the element has. Classes with an aspect ratio use
+        the <code>aspect-ratio</code> property to change the dimensions of the element
+        to maintain the ratio.
+      </p>
+      <p>
+        When using the classes with aspect ratios, only set the <code
+          >width</code
+        > or <code>height</code> not both, otherwise the aspect ratio will be overridden.
+        Alternatively, you can set both <code>max-width</code> and <code
+          >max-height</code
+        > to maintain the aspect ratio. If you need the flag to keep the aspect ratio
+        and fit inside a box with fixed width and height, you can add a fixed-size
+        wrapper around the element with the flag class and apply <code
+          >max-width</code
+        > and <code>max-height</code> to the flag element. This will make it behave
+        similarly to <code>object-fit: contain</code>.
+      </p>
+      <p>
+        <strong>Notes on the Progress design:</strong> The Progress design only comes
+        in vertical and horizontal orientations because the diagonal gradients simply
+        don't look good. This flag really needs an aspect ratio for the chevron design
+        to work. The CSS classes are the recommended way to use this design, but
+        if you need to use the custom properties to style a pseudo-element, then
+        you'll probably want to apply your own aspect ratio to it. If you need the
+        colors in this design but need it to work without an aspect ratio, try the
+        New Pride design instead.
+      </p>
+    </Section>
+    <Section>
+      <h2 id="flags">Flags</h2>
+      <div class="card-grid flags">
+        <FlagCard
+          heading="Gilbert Baker"
+          horizProperty="--baker-horizontal"
+          vertProperty="--baker-vertical"
+          diagProperty="--baker-diagonal"
+          horizClass="baker-horizontal"
+          horiz53Class="baker-horizontal-5-3"
+          vertClass="baker-vertical"
+          vert35Class="baker-vertical-3-5"
+          diagClass="baker-diagonal"
+        />
+        <FlagCard
+          heading="Rainbow Flag"
+          horizProperty="--rainbow-horizontal"
+          vertProperty="--rainbow-vertical"
+          diagProperty="--rainbow-diagonal"
+          horizClass="rainbow-horizontal"
+          horiz53Class="rainbow-horizontal-5-3"
+          vertClass="rainbow-vertical"
+          vert35Class="rainbow-vertical-3-5"
+          diagClass="rainbow-diagonal"
+        />
+        <FlagCard
+          heading="Philadelphia"
+          horizProperty="--philadelphia-horizontal"
+          vertProperty="--philadelphia-vertical"
+          diagProperty="--philadelphia-diagonal"
+          horizClass="philadelphia-horizontal"
+          horiz53Class="philadelphia-horizontal-5-3"
+          vertClass="philadelphia-vertical"
+          vert35Class="philadelphia-vertical-3-5"
+          diagClass="philadelphia-diagonal"
+        />
+        <FlagCard
+          heading="Progress"
+          horizProperty="--progress-horizontal"
+          vertProperty="--progress-vertical"
+          diagProperty={null}
+          horizClass={null}
+          horiz53Class="progress-horizontal-5-3"
+          vertClass={null}
+          vert35Class="progress-vertical-3-5"
+          diagClass={null}
+        />
+        <FlagCard
+          heading="New Pride"
+          horizProperty="--new-pride-horizontal"
+          vertProperty="--new-pride-vertical"
+          diagProperty="--new-pride-diagonal"
+          horizClass="new-pride-horizontal"
+          horiz53Class="new-pride-horizontal-5-3"
+          vertClass="new-pride-vertical"
+          vert35Class="new-pride-vertical-3-5"
+          diagClass="new-pride-diagonal"
+        />
+        <FlagCard
+          heading="Bisexual"
+          horizProperty="--bisexual-horizontal"
+          vertProperty="--bisexual-vertical"
+          diagProperty="--bisexual-diagonal"
+          horizClass="bisexual-horizontal"
+          horiz53Class="bisexual-horizontal-5-3"
+          vertClass="bisexual-vertical"
+          vert35Class="bisexual-vertical-3-5"
+          diagClass="bisexual-diagonal"
+        />
+        <FlagCard
+          heading="Lesbian"
+          horizProperty="--lesbian-horizontal"
+          vertProperty="--lesbian-vertical"
+          diagProperty="--lesbian-diagonal"
+          horizClass="lesbian-horizontal"
+          horiz53Class="lesbian-horizontal-5-3"
+          vertClass="lesbian-vertical"
+          vert35Class="lesbian-vertical-3-5"
+          diagClass="lesbian-diagonal"
+        />
+        <FlagCard
+          heading="Transgender"
+          horizProperty="--transgender-horizontal"
+          vertProperty="--transgender-vertical"
+          diagProperty="--transgender-diagonal"
+          horizClass="transgender-horizontal"
+          horiz53Class="transgender-horizontal-5-3"
+          vertClass="transgender-vertical"
+          vert35Class="transgender-vertical-3-5"
+          diagClass="transgender-diagonal"
+        />
+        <FlagCard
+          heading="Nonbinary"
+          horizProperty="--nonbinary-horizontal"
+          vertProperty="--nonbinary-vertical"
+          diagProperty="--nonbinary-diagonal"
+          horizClass="nonbinary-horizontal"
+          horiz53Class="nonbinary-horizontal-5-3"
+          vertClass="nonbinary-vertical"
+          vert35Class="nonbinary-vertical-3-5"
+          diagClass="nonbinary-diagonal"
+        />
+      </div>
+    </Section>
+    <Section>
+      <h2 id="color-swatches">Color Swatches</h2>
+      <p>
+        See which colors go with which flag on <a
+          href="https://www.pantone.com/articles/color-news/celebrating-the-rainbow-the-stories-and-significance-of-pride-flag-colors"
+          target="_blank"
+          rel="noopener noreferrer">Pantone</a
+        >.
+      </p>
+      <div class="card-grid color-swatches">
+        <ColorSwatch property="--pantone-812-c" heading="Pantone 812 C" />
+        <ColorSwatch property="--pantone-2347-c" heading="Pantone 2347 C" />
+        <ColorSwatch property="--pantone-2018-c" heading="Pantone 2018 C" />
+        <ColorSwatch property="--pantone-3945-c" heading="Pantone 3945 C" />
+        <ColorSwatch property="--pantone-356-c" heading="Pantone 356 C" />
+        <ColorSwatch property="--pantone-3262-c" heading="Pantone 3262 C" />
+        <ColorSwatch property="--pantone-2726-c" heading="Pantone 2726 C" />
+        <ColorSwatch property="--pantone-253-c" heading="Pantone 253 C" />
+        <ColorSwatch property="--pantone-black-c" heading="Pantone Black C" />
+        <ColorSwatch property="--pantone-731-c" heading="Pantone 731 C" />
+        <ColorSwatch property="--pantone-0521-c" heading="Pantone 0521 C" />
+        <ColorSwatch
+          property="--pantone-blue-0821-c"
+          heading="Pantone Blue 0821 C"
+        />
+        <ColorSwatch
+          property="--pantone-black-6-c"
+          heading="Pantone Black 6 C"
+        />
+        <ColorSwatch property="--pantone-2320-c" heading="Pantone 2320 C" />
+        <ColorSwatch property="--pantone-226-c" heading="Pantone 226 C" />
+        <ColorSwatch property="--pantone-258-c" heading="Pantone 258 C" />
+        <ColorSwatch property="--pantone-286-c" heading="Pantone 286 C" />
+        <ColorSwatch property="--pantone-2349-c" heading="Pantone 2349 C" />
+        <ColorSwatch property="--pantone-1565-c" heading="Pantone 1565 C" />
+        <ColorSwatch property="--pantone-674-c" heading="Pantone 674 C" />
+        <ColorSwatch property="--pantone-234-c" heading="Pantone 234 C" />
+        <ColorSwatch
+          property="--pantone-blue-305-c"
+          heading="Pantone Blue 305 C"
+        />
+        <ColorSwatch property="--pantone-700-c" heading="Pantone 700 C" />
+        <ColorSwatch property="--white" heading="White" />
+        <ColorSwatch property="--pantone-394-c" heading="Pantone 394 C" />
+        <ColorSwatch property="--pantone-265-c" heading="Pantone 265 C" />
+      </div>
+    </Section>
+  </main>
+  <footer class="site-footer">
+    <small class="copyright"
+      >© {currYear} The Pride Flags Authors. MIT License.</small
+    >
+  </footer>
+</BaseLayout>
+
+<style>
+  .site-header {
+    min-height: 80vh;
+    background: var(--new-pride-horizontal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-5);
+  }
+
+  .site-header__inner {
+    text-align: center;
+    max-width: 36rem;
+    padding: var(--spacing-7);
+    background-color: var(--color-container);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow);
+  }
+
+  .site-title {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+  }
+
+  .site-title :first-child {
+    grid-column: 2 / 3;
+    color: var(--pantone-258-c);
+    text-align: start;
+  }
+
+  .site-title :last-child {
+    grid-column: 2 / 3;
+  }
+
+  .project-links {
+    padding: var(--spacing-4);
+    display: flex;
+    gap: var(--spacing-4);
+    justify-content: center;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    min-height: 2.5rem;
+    padding-inline: var(--spacing-3);
+    border-radius: var(--radius-s);
+    box-shadow:
+      rgb(0 0 0 / 24%) 1px 3px 2px -2px,
+      rgb(0 0 0 / 16%) 1px 2px 2px 1px,
+      rgb(0 0 0 / 14%) 0 1px 3px 0;
+    text-decoration: none;
+    background-color: var(--color-container);
+    color: var(--color-accent);
+    font-weight: 400;
+    transition: all 0.2s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-1px);
+    box-shadow:
+      2px 8px 6px -1px rgb(0 0 0 / 8%),
+      1px 2px 2px 0 rgb(0 0 0 / 36%);
+  }
+
+  .icon {
+    color: var(--color-secondary-text);
+  }
+
+  .card-grid {
+    padding: var(--spacing-5) 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: var(--spacing-5);
+  }
+
+  .browser-support {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-3);
+    border-radius: var(--radius-m);
+    background-color: var(--color-container);
+    box-shadow: var(--shadow);
+    margin-inline-end: var(--spacing-2);
+  }
+
+  .site-footer {
+    padding: var(--spacing-7) var(--spacing-5);
+  }
+</style>

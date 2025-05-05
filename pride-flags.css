@@ -1,0 +1,533 @@
+:root {
+  --pantone-812-c: oklch(71% 0.203 357.66deg);
+  --pantone-2347-c: oklch(58% 0.2113 29.69deg);
+  --pantone-2018-c: oklch(69% 0.1631 56.36deg);
+  --pantone-3945-c: oklch(91% 0.1926 105.15deg);
+  --pantone-356-c: oklch(54% 0.152 148.7625deg);
+  --pantone-3262-c: oklch(68% 0.1178 183.34deg);
+  --pantone-2726-c: oklch(52% 0.1122 276.26deg);
+  --pantone-253-c: oklch(52% 0.1667 336.17deg);
+  --pantone-black-c: oklch(33% 0.0204 82.64deg);
+  --pantone-731-c: oklch(45% 0.0964 54.27deg);
+  --pantone-0521-c: oklch(83% 0.0907 339.33deg);
+  --pantone-blue-0821-c: oklch(81% 0.0951 217.32deg);
+  --pantone-black-6-c: oklch(23% 0.0218 248.77deg);
+  --pantone-2320-c: oklch(43% 0.0795 53.22deg);
+  --pantone-226-c: oklch(58% 0.2333 355.94deg);
+  --pantone-258-c: oklch(54% 0.1193 318.07deg);
+  --pantone-286-c: oklch(41% 0.1261 263.02deg);
+  --pantone-2349-c: oklch(59% 0.1816 28.9deg);
+  --pantone-1565-c: oklch(74% 0.1138 49.68deg);
+  --pantone-674-c: oklch(64% 0.1464 343.99deg);
+  --pantone-234-c: oklch(48% 0.1917 350.06deg);
+  --pantone-blue-305-c: oklch(79% 0.0889 219.17deg);
+  --pantone-700-c: oklch(78% 0.0789 10.02deg);
+  --white: oklch(100% 0 0deg);
+  --pantone-394-c: oklch(91% 0.1634 105.43deg);
+  --pantone-265-c: oklch(60% 0.0946 305.89deg);
+  --nonbinary-horizontal: linear-gradient(
+    to bottom,
+    var(--pantone-394-c) 0% 25%,
+    var(--white) 25% 50%,
+    var(--pantone-265-c) 50% 75%,
+    var(--pantone-black-c) 75% 100%
+  );
+  --nonbinary-vertical: linear-gradient(
+    to left,
+    var(--pantone-394-c) 0% 25%,
+    var(--white) 25% 50%,
+    var(--pantone-265-c) 50% 75%,
+    var(--pantone-black-c) 75% 100%
+  );
+  --nonbinary-diagonal: linear-gradient(
+    225deg,
+    var(--pantone-394-c) 0% 25%,
+    var(--white) 25% 50%,
+    var(--pantone-265-c) 50% 75%,
+    var(--pantone-black-c) 75% 100%
+  );
+  --transgender-horizontal: linear-gradient(
+    to bottom,
+    var(--pantone-blue-305-c) 0% 20%,
+    var(--pantone-700-c) 20% 40%,
+    var(--white) 40% 60%,
+    var(--pantone-700-c) 60% 80%,
+    var(--pantone-blue-305-c) 80% 100%
+  );
+  --transgender-vertical: linear-gradient(
+    to left,
+    var(--pantone-blue-305-c) 0% 20%,
+    var(--pantone-700-c) 20% 40%,
+    var(--white) 40% 60%,
+    var(--pantone-700-c) 60% 80%,
+    var(--pantone-blue-305-c) 80% 100%
+  );
+  --transgender-diagonal: linear-gradient(
+    225deg,
+    var(--pantone-blue-305-c) 0% 20%,
+    var(--pantone-700-c) 20% 40%,
+    var(--white) 40% 60%,
+    var(--pantone-700-c) 60% 80%,
+    var(--pantone-blue-305-c) 80% 100%
+  );
+  --lesbian-horizontal: linear-gradient(
+    to bottom,
+    var(--pantone-2349-c) 0% 20%,
+    var(--pantone-1565-c) 20% 40%,
+    var(--white) 40% 60%,
+    var(--pantone-674-c) 60% 80%,
+    var(--pantone-234-c) 80% 100%
+  );
+  --lesbian-vertical: linear-gradient(
+    to left,
+    var(--pantone-2349-c) 0% 20%,
+    var(--pantone-1565-c) 20% 40%,
+    var(--white) 40% 60%,
+    var(--pantone-674-c) 60% 80%,
+    var(--pantone-234-c) 80% 100%
+  );
+  --lesbian-diagonal: linear-gradient(
+    225deg,
+    var(--pantone-2349-c) 0% 20%,
+    var(--pantone-1565-c) 20% 40%,
+    var(--white) 40% 60%,
+    var(--pantone-674-c) 60% 80%,
+    var(--pantone-234-c) 80% 100%
+  );
+  --bisexual-horizontal: linear-gradient(
+    to bottom,
+    var(--pantone-226-c) 0% 40%,
+    var(--pantone-258-c) 40% 60%,
+    var(--pantone-286-c) 60% 100%
+  );
+  --bisexual-vertical: linear-gradient(
+    to left,
+    var(--pantone-226-c) 0% 40%,
+    var(--pantone-258-c) 40% 60%,
+    var(--pantone-286-c) 60% 100%
+  );
+  --bisexual-diagonal: linear-gradient(
+    225deg,
+    var(--pantone-226-c) 0% 40%,
+    var(--pantone-258-c) 40% 60%,
+    var(--pantone-286-c) 60% 100%
+  );
+  --baker-horizontal: linear-gradient(
+    to bottom,
+    var(--pantone-812-c) 0% 12.5%,
+    var(--pantone-2347-c) 12.5% 25%,
+    var(--pantone-2018-c) 25% 37.5%,
+    var(--pantone-3945-c) 37.5% 50%,
+    var(--pantone-356-c) 50% 62.5%,
+    var(--pantone-3262-c) 62.5% 75%,
+    var(--pantone-2726-c) 75% 87.5%,
+    var(--pantone-253-c) 87.5% 100%
+  );
+  --baker-vertical: linear-gradient(
+    to left,
+    var(--pantone-812-c) 0% 12.5%,
+    var(--pantone-2347-c) 12.5% 25%,
+    var(--pantone-2018-c) 25% 37.5%,
+    var(--pantone-3945-c) 37.5% 50%,
+    var(--pantone-356-c) 50% 62.5%,
+    var(--pantone-3262-c) 62.5% 75%,
+    var(--pantone-2726-c) 75% 87.5%,
+    var(--pantone-253-c) 87.5% 100%
+  );
+  --baker-diagonal: linear-gradient(
+    225deg,
+    var(--pantone-812-c) 0% 12.5%,
+    var(--pantone-2347-c) 12.5% 25%,
+    var(--pantone-2018-c) 25% 37.5%,
+    var(--pantone-3945-c) 37.5% 50%,
+    var(--pantone-356-c) 50% 62.5%,
+    var(--pantone-3262-c) 62.5% 75%,
+    var(--pantone-2726-c) 75% 87.5%,
+    var(--pantone-253-c) 87.5% 100%
+  );
+  --philadelphia-horizontal: linear-gradient(
+    to bottom,
+    var(--pantone-black-c) 0% 12.5%,
+    var(--pantone-731-c) 12.5% 25%,
+    var(--pantone-2347-c) 25% 37.5%,
+    var(--pantone-2018-c) 37.5% 50%,
+    var(--pantone-3945-c) 50% 62.5%,
+    var(--pantone-356-c) 62.5% 75%,
+    var(--pantone-2726-c) 75% 87.5%,
+    var(--pantone-253-c) 87.5% 100%
+  );
+  --philadelphia-vertical: linear-gradient(
+    to left,
+    var(--pantone-black-c) 0% 12.5%,
+    var(--pantone-731-c) 12.5% 25%,
+    var(--pantone-2347-c) 25% 37.5%,
+    var(--pantone-2018-c) 37.5% 50%,
+    var(--pantone-3945-c) 50% 62.5%,
+    var(--pantone-356-c) 62.5% 75%,
+    var(--pantone-2726-c) 75% 87.5%,
+    var(--pantone-253-c) 87.5% 100%
+  );
+  --philadelphia-diagonal: linear-gradient(
+    225deg,
+    var(--pantone-black-c) 0% 12.5%,
+    var(--pantone-731-c) 12.5% 25%,
+    var(--pantone-2347-c) 25% 37.5%,
+    var(--pantone-2018-c) 37.5% 50%,
+    var(--pantone-3945-c) 50% 62.5%,
+    var(--pantone-356-c) 62.5% 75%,
+    var(--pantone-2726-c) 75% 87.5%,
+    var(--pantone-253-c) 87.5% 100%
+  );
+  --rainbow-horizontal: linear-gradient(
+    to bottom,
+    var(--pantone-2347-c) 0% 16.66%,
+    var(--pantone-2018-c) 16.66% 33.32%,
+    var(--pantone-3945-c) 33.32% 50%,
+    var(--pantone-356-c) 50% 66.68%,
+    var(--pantone-2726-c) 66.68% 83.34%,
+    var(--pantone-253-c) 83.34% 100%
+  );
+  --rainbow-vertical: linear-gradient(
+    to left,
+    var(--pantone-2347-c) 0% 16.66%,
+    var(--pantone-2018-c) 16.66% 33.32%,
+    var(--pantone-3945-c) 33.32% 50%,
+    var(--pantone-356-c) 50% 66.68%,
+    var(--pantone-2726-c) 66.68% 83.34%,
+    var(--pantone-253-c) 83.34% 100%
+  );
+  --rainbow-diagonal: linear-gradient(
+    225deg,
+    var(--pantone-2347-c) 0% 16.66%,
+    var(--pantone-2018-c) 16.66% 33.32%,
+    var(--pantone-3945-c) 33.32% 50%,
+    var(--pantone-356-c) 50% 66.68%,
+    var(--pantone-2726-c) 66.68% 83.34%,
+    var(--pantone-253-c) 83.34% 100%
+  );
+  --new-pride-horizontal:
+    linear-gradient(149deg, var(--white) 0% 10%, transparent 10% 100%),
+    linear-gradient(149deg, var(--pantone-0521-c) 0% 20%, transparent 20% 100%),
+    linear-gradient(
+      149deg,
+      var(--pantone-blue-0821-c) 0% 30%,
+      transparent 30% 100%
+    ),
+    linear-gradient(149deg, var(--pantone-2320-c) 0% 40%, transparent 40% 100%),
+    linear-gradient(
+      149deg,
+      var(--pantone-black-6-c) 0% 50%,
+      transparent 50% 100%
+    ),
+    linear-gradient(
+      to bottom,
+      var(--pantone-2347-c) 0% 16.66%,
+      var(--pantone-2018-c) 16.66% 33.32%,
+      var(--pantone-3945-c) 33.32% 50%,
+      var(--pantone-356-c) 50% 66.68%,
+      var(--pantone-2726-c) 66.68% 83.34%,
+      var(--pantone-253-c) 83.34% 100%
+    );
+  --new-pride-vertical:
+    linear-gradient(239deg, var(--white) 0% 10%, transparent 10% 100%),
+    linear-gradient(239deg, var(--pantone-0521-c) 0% 20%, transparent 20% 100%),
+    linear-gradient(
+      239deg,
+      var(--pantone-blue-0821-c) 0% 30%,
+      transparent 30% 100%
+    ),
+    linear-gradient(239deg, var(--pantone-2320-c) 0% 40%, transparent 40% 100%),
+    linear-gradient(
+      239deg,
+      var(--pantone-black-6-c) 0% 50%,
+      transparent 50% 100%
+    ),
+    linear-gradient(
+      to left,
+      var(--pantone-2347-c) 0% 16.66%,
+      var(--pantone-2018-c) 16.66% 33.32%,
+      var(--pantone-3945-c) 33.32% 50%,
+      var(--pantone-356-c) 50% 66.68%,
+      var(--pantone-2726-c) 66.68% 83.34%,
+      var(--pantone-253-c) 83.34% 100%
+    );
+  --new-pride-diagonal:
+    linear-gradient(194deg, var(--white) 0% 10%, transparent 10% 100%),
+    linear-gradient(194deg, var(--pantone-0521-c) 0% 20%, transparent 20% 100%),
+    linear-gradient(
+      194deg,
+      var(--pantone-blue-0821-c) 0% 30%,
+      transparent 30% 100%
+    ),
+    linear-gradient(194deg, var(--pantone-2320-c) 0% 40%, transparent 40% 100%),
+    linear-gradient(
+      194deg,
+      var(--pantone-black-6-c) 0% 50%,
+      transparent 50% 100%
+    ),
+    linear-gradient(
+      225deg,
+      var(--pantone-2347-c) 0% 16.66%,
+      var(--pantone-2018-c) 16.66% 33.32%,
+      var(--pantone-3945-c) 33.32% 50%,
+      var(--pantone-356-c) 50% 66.68%,
+      var(--pantone-2726-c) 66.68% 83.34%,
+      var(--pantone-253-c) 83.34% 100%
+    );
+  --progress-horizontal:
+    conic-gradient(
+      from 253grad at 15% 50%,
+      var(--white) 85deg,
+      transparent 85deg
+    ),
+    conic-gradient(
+      from 253grad at 24% 50%,
+      var(--pantone-0521-c) 85deg,
+      transparent 85deg
+    ),
+    conic-gradient(
+      from 253grad at 33% 50%,
+      var(--pantone-blue-0821-c) 85deg,
+      transparent 85deg
+    ),
+    conic-gradient(
+      from 253grad at 42% 50%,
+      var(--pantone-2320-c) 85deg,
+      transparent 85deg
+    ),
+    conic-gradient(
+      from 253grad at 50% 50%,
+      var(--pantone-black-6-c) 85deg,
+      transparent 85deg
+    ),
+    linear-gradient(
+      to bottom,
+      var(--pantone-2347-c) 0% 16.66%,
+      var(--pantone-2018-c) 16.66% 33.32%,
+      var(--pantone-3945-c) 33.32% 50%,
+      var(--pantone-356-c) 50% 66.68%,
+      var(--pantone-2726-c) 66.68% 83.34%,
+      var(--pantone-253-c) 83.34% 100%
+    );
+  --progress-vertical:
+    conic-gradient(
+      from 353grad at 50% 15%,
+      var(--white) 85deg,
+      transparent 85deg
+    ),
+    conic-gradient(
+      from 353grad at 50% 24%,
+      var(--pantone-0521-c) 85deg,
+      transparent 85deg
+    ),
+    conic-gradient(
+      from 353grad at 50% 33%,
+      var(--pantone-blue-0821-c) 85deg,
+      transparent 85deg
+    ),
+    conic-gradient(
+      from 353grad at 50% 42%,
+      var(--pantone-2320-c) 85deg,
+      transparent 85deg
+    ),
+    conic-gradient(
+      from 353grad at 50% 50%,
+      var(--pantone-black-6-c) 85deg,
+      transparent 85deg
+    ),
+    linear-gradient(
+      270deg,
+      var(--pantone-2347-c) 0% 16.66%,
+      var(--pantone-2018-c) 16.66% 33.32%,
+      var(--pantone-3945-c) 33.32% 50%,
+      var(--pantone-356-c) 50% 66.68%,
+      var(--pantone-2726-c) 66.68% 83.34%,
+      var(--pantone-253-c) 83.34% 100%
+    );
+}
+
+.baker-horizontal {
+  background: var(--baker-horizontal);
+}
+
+.baker-horizontal-5-3 {
+  background: var(--baker-horizontal);
+  aspect-ratio: 5 / 3;
+}
+
+.baker-vertical {
+  background: var(--baker-vertical);
+}
+
+.baker-vertical-3-5 {
+  background: var(--baker-vertical);
+  aspect-ratio: 3 / 5;
+}
+
+.baker-diagonal {
+  background: var(--baker-diagonal);
+}
+
+.rainbow-horizontal {
+  background: var(--rainbow-horizontal);
+}
+
+.rainbow-horizontal-5-3 {
+  background: var(--rainbow-horizontal);
+  aspect-ratio: 5 / 3;
+}
+
+.rainbow-vertical {
+  background: var(--rainbow-vertical);
+}
+
+.rainbow-vertical-3-5 {
+  background: var(--rainbow-vertical);
+  aspect-ratio: 3 / 5;
+}
+
+.rainbow-diagonal {
+  background: var(--rainbow-diagonal);
+}
+
+.philadelphia-horizontal {
+  background: var(--philadelphia-horizontal);
+}
+
+.philadelphia-horizontal-5-3 {
+  background: var(--philadelphia-horizontal);
+  aspect-ratio: 5 / 3;
+}
+
+.philadelphia-vertical {
+  background: var(--philadelphia-vertical);
+}
+
+.philadelphia-vertical-3-5 {
+  background: var(--philadelphia-vertical);
+  aspect-ratio: 3 / 5;
+}
+
+.philadelphia-diagonal {
+  background: var(--philadelphia-diagonal);
+}
+
+.progress-horizontal-5-3 {
+  background: var(--progress-horizontal);
+  aspect-ratio: 5 / 3;
+}
+
+.progress-vertical-3-5 {
+  background: var(--progress-vertical);
+  aspect-ratio: 3 / 5;
+}
+
+.new-pride-horizontal {
+  background: var(--new-pride-horizontal);
+}
+
+.new-pride-horizontal-5-3 {
+  background: var(--new-pride-horizontal);
+  aspect-ratio: 5 / 3;
+}
+
+.new-pride-vertical {
+  background: var(--new-pride-vertical);
+}
+
+.new-pride-vertical-3-5 {
+  background: var(--new-pride-vertical);
+  aspect-ratio: 3 / 5;
+}
+
+.new-pride-diagonal {
+  background: var(--new-pride-diagonal);
+}
+
+.bisexual-horizontal {
+  background: var(--bisexual-horizontal);
+}
+
+.bisexual-horizontal-5-3 {
+  background: var(--bisexual-horizontal);
+  aspect-ratio: 5 / 3;
+}
+
+.bisexual-vertical {
+  background: var(--bisexual-vertical);
+}
+
+.bisexual-vertical-3-5 {
+  background: var(--bisexual-vertical);
+  aspect-ratio: 3 / 5;
+}
+
+.bisexual-diagonal {
+  background: var(--bisexual-diagonal);
+}
+
+.lesbian-horizontal {
+  background: var(--lesbian-horizontal);
+}
+
+.lesbian-horizontal-5-3 {
+  background: var(--lesbian-horizontal);
+  aspect-ratio: 5 / 3;
+}
+
+.lesbian-vertical {
+  background: var(--lesbian-vertical);
+}
+
+.lesbian-vertical-3-5 {
+  background: var(--lesbian-vertical);
+  aspect-ratio: 3 / 5;
+}
+
+.lesbian-diagonal {
+  background: var(--lesbian-diagonal);
+}
+
+.transgender-horizontal {
+  background: var(--transgender-horizontal);
+}
+
+.transgender-horizontal-5-3 {
+  background: var(--transgender-horizontal);
+  aspect-ratio: 5 / 3;
+}
+
+.transgender-vertical {
+  background: var(--transgender-vertical);
+}
+
+.transgender-vertical-3-5 {
+  background: var(--transgender-vertical);
+  aspect-ratio: 3 / 5;
+}
+
+.transgender-diagonal {
+  background: var(--transgender-diagonal);
+}
+
+.nonbinary-horizontal {
+  background: var(--nonbinary-horizontal);
+}
+
+.nonbinary-horizontal-5-3 {
+  background: var(--nonbinary-horizontal);
+  aspect-ratio: 5 / 3;
+}
+
+.nonbinary-vertical {
+  background: var(--nonbinary-vertical);
+}
+
+.nonbinary-vertical-3-5 {
+  background: var(--nonbinary-vertical);
+  aspect-ratio: 3 / 5;
+}
+
+.nonbinary-diagonal {
+  background: var(--nonbinary-diagonal);
+}

@@ -1,0 +1,12 @@
+# Line ending behavior
+* text=auto eol=lf
+
+# Binary files that shouldn't be modified or diffed
+*.gif binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.ttf binary
+*.woff binary
+*.woff2 binary

@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/Card.astro';
+
+const pageTitle = 'Page Not Found';
+const description = '404 Error. That page could not be found.';
+---
+
+<BaseLayout pageTitle={pageTitle} description={description}>
+  <main class="new-pride-horizontal">
+    <Card>
+      <h1 class="text-display">404 Error</h1>
+      <p class="text-subtitle1">Hmmm... There's nothing here.</p>
+      <p class="text-subtitle1">
+        Go to the <a href="/pride-flags/">Home</a> page.
+      </p>
+    </Card>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    min-height: 100vh;
+    padding: var(--spacing-5);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+</style>

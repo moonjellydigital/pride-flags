@@ -1,0 +1,30 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'div'> {
+  children: any;
+}
+
+const { ...props } = Astro.props;
+---
+
+<div class="card" {...props}>
+  <slot />
+</div>
+
+<style is:global>
+  .card {
+    background-color: var(--color-container);
+    padding: 1.875rem;
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow);
+
+    & :first-child {
+      margin-block-start: 0;
+    }
+
+    & :last-child {
+      margin-block-end: 0;
+    }
+  }
+</style>

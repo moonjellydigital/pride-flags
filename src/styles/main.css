@@ -1,0 +1,41 @@
+@import url('../../node_modules/modern-normalize/modern-normalize.css');
+@import url('./base.css');
+@import url('./vars.css');
+@import url('./typography.css');
+@import url('../../pride-flags.css');
+
+address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+dd,
+dl,
+dt,
+figcaption,
+hr,
+li,
+ol,
+p,
+pre,
+ul,
+audio,
+img,
+video,
+embed,
+iframe,
+object,
+picture,
+caption,
+table,
+form,
+details {
+  margin-block: var(--spacing-4) 0;
+}
+
+body {
+  background-color: var(--color-light-bg);
+}
