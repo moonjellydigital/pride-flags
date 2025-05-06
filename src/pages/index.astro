@@ -14,6 +14,8 @@ import IconOpera from '../components/IconOpera.astro';
 import Card from '../components/Card.astro';
 import Section from '../components/Section.astro';
 import FlagCard from '../components/FlagCard.astro';
+import IconJsdelivr from '../components/IconJsdelivr.astro';
+import IconUnpkg from '../components/IconUnpkg.astro';
 
 const pageTitle = '@moonjellydigital Pride Flags';
 const description =
@@ -33,7 +35,7 @@ const currYear = new Date().getFullYear();
         Add beautiful pride flag designs to your web projects with just a few
         lines of code.
       </p>
-      <div class="project-links">
+      <div class="btn-group centered">
         <a class="btn" href="https://github.com/moonjellydigital/pride-flags">
           <IconGithub />
           GitHub
@@ -92,6 +94,32 @@ const currYear = new Date().getFullYear();
       <p>pnpm: <code>pnpm add @moonjellydigital/pride-flags</code></p>
       <p>yarn: <code>yarn add @moonjellydigital/pride-flags</code></p>
       <p>bun: <code>bun add @moonjellydigital/pride-flags</code></p>
+      <h3>Download</h3>
+      <div class="btn-group">
+        <a
+          class="btn"
+          href="https://cdn.jsdelivr.net/npm/@moonjellydigital/pride-flags/pride-flags.css"
+          ><IconJsdelivr /> Normal</a
+        >
+        <a
+          class="btn"
+          href="https://cdn.jsdelivr.net/npm/@moonjellydigital/pride-flags/pride-flags.min.css"
+          ><IconJsdelivr /> Minified</a
+        >
+      </div>
+      <h3>CDN</h3>
+      <div class="btn-group">
+        <a
+          class="btn"
+          href="https://www.jsdelivr.com/package/npm/@moonjellydigital/pride-flags"
+          ><IconJsdelivr /> jsDelivr</a
+        >
+        <a
+          class="btn"
+          href="https://unpkg.com/@moonjellydigital/pride-flags@1.1.0/pride-flags.css"
+          ><IconUnpkg /> UNPKG</a
+        >
+      </div>
     </Section>
     <Section>
       <h2 id="usage">Usage</h2>
@@ -307,7 +335,7 @@ const currYear = new Date().getFullYear();
   </main>
   <footer class="site-footer">
     <small class="copyright"
-      >© {currYear} The Pride Flags Authors. MIT License.</small
+      >© {currYear} The @moonjellydigital/pride-flags Authors. MIT License.</small
     >
   </footer>
 </BaseLayout>
@@ -347,11 +375,15 @@ const currYear = new Date().getFullYear();
     grid-column: 2 / 3;
   }
 
-  .project-links {
-    padding: var(--spacing-4);
+  .btn-group {
+    padding: var(--spacing-4) 0;
     display: flex;
     gap: var(--spacing-4);
-    justify-content: center;
+
+    &.centered {
+      justify-content: center;
+      padding: var(--spacing-4);
+    }
   }
 
   .btn {
@@ -359,8 +391,8 @@ const currYear = new Date().getFullYear();
     align-items: center;
     gap: var(--spacing-1);
     min-height: 2.5rem;
-    padding-inline: var(--spacing-3);
-    border-radius: var(--radius-s);
+    padding-inline: var(--spacing-4);
+    border-radius: 50px;
     box-shadow:
       rgb(0 0 0 / 24%) 1px 3px 2px -2px,
       rgb(0 0 0 / 16%) 1px 2px 2px 1px,
@@ -377,6 +409,14 @@ const currYear = new Date().getFullYear();
     box-shadow:
       2px 8px 6px -1px rgb(0 0 0 / 8%),
       1px 2px 2px 0 rgb(0 0 0 / 36%);
+  }
+
+  .btn:active {
+    transform: translateY(1px);
+    box-shadow:
+      rgb(0 0 0 / 24%) 1px 3px 2px -2px,
+      rgb(0 0 0 / 16%) 1px 2px 2px 1px,
+      rgb(0 0 0 / 14%) 0 1px 3px 0;
   }
 
   .icon {

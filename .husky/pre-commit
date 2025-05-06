@@ -1,1 +1,1 @@
-bunx astro check && bunx lint-staged
+bun banner.bun.ts && bunx astro check && bunx lint-staged

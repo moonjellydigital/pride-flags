@@ -46,6 +46,18 @@ bun:
 bun add @moonjellydigital/pride-flags
 ```
 
+### Download
+
+- [Normal](https://cdn.jsdelivr.net/npm/@moonjellydigital/pride-flags/pride-flags.css)
+
+- [Minified](https://cdn.jsdelivr.net/npm/@moonjellydigital/pride-flags/pride-flags.min.css)
+
+### CDN
+
+- [jsDelivr](https://www.jsdelivr.com/package/npm/@moonjellydigital/pride-flags)
+
+- [UNPKG](https://unpkg.com/@moonjellydigital/pride-flags@1.1.0/pride-flags.css)
+
 ## Usage
 
 In a stylesheet:

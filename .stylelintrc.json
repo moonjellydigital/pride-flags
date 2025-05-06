@@ -11,7 +11,8 @@
     "**/*.lock",
     "**/*.svg",
     "**/*.txt",
-    "**/*.{md,mdx}"
+    "**/*.{md,mdx}",
+    "dist/**/*"
   ],
   "rules": {
     "selector-class-pattern": null
