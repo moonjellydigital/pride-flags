@@ -131,3 +131,12 @@ textarea {
 [hidden]:where(:not([hidden='until-found'])) {
   display: none !important;
 }
+
+/*
+  Prevent text from overflowing its container.
+*/
+body {
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+}

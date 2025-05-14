@@ -1,15 +1,15 @@
 @font-face {
   font-family: DMSans;
-  src: url('../../public/fonts/DMSans-VariableFont_opsz-wght.ttf')
-    format('truetype');
+  src: url('../../public/fonts/DMSans-VariableFont_opsz-wght.woff2')
+    format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: DMSans;
-  src: url('../../public/fonts/DMSans-Italic-VariableFont_opsz-wght.ttf')
-    format('truetype');
+  src: url('../../public/fonts/DMSans-Italic-VariableFont_opsz-wght.woff2')
+    format('woff2');
   font-style: italic;
   font-display: swap;
 }
@@ -105,11 +105,6 @@ caption {
   color: var(--color-primary-text);
 }
 
-i,
-em {
-  font-family: var(--text-italic-family), var(--text-italic-fallback);
-}
-
 a:link,
 a:visited,
 a:hover,
@@ -125,6 +120,20 @@ code {
   font-family: monospace;
   font-size: var(--text-small-size);
   overflow-x: auto;
+}
+
+pre {
+  background-color: var(--color-light-bg-variant);
+  border: solid 1px var(--color-outline);
+  padding: var(--spacing-0) var(--spacing-1);
+  border-radius: var(--radius-s);
+  font-family: monospace;
+  font-size: var(--text-small-size);
+  overflow-x: scroll;
+}
+
+pre code {
+  border: none;
 }
 
 .text-display {

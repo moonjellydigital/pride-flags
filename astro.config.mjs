@@ -12,7 +12,7 @@ export default defineConfig({
   integrations: [sitemap(), mdx()],
   markdown: {
     shikiConfig: {
-      theme: 'catppuccin-frappe',
+      theme: 'github-light',
     },
   },
 });

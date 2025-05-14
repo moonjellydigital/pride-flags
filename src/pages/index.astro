@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ColorSwatch from '../components/color-swatch.astro';
+import ColorSwatch from '../components/ColorSwatch.astro';
 import IconGithub from '../components/IconGithub.astro';
 import IconNpm from '../components/IconNpm.astro';
 import IconFeather from '../components/IconFeather.astro';
@@ -16,6 +16,7 @@ import Section from '../components/Section.astro';
 import FlagCard from '../components/FlagCard.astro';
 import IconJsdelivr from '../components/IconJsdelivr.astro';
 import IconUnpkg from '../components/IconUnpkg.astro';
+import { Code } from 'astro:components';
 
 const pageTitle = '@moonjellydigital Pride Flags';
 const description =
@@ -142,44 +143,74 @@ const currYear = new Date().getFullYear();
         >
       </p>
       <h3>Applying CSS</h3>
-      <p>
-        Both ready-to-use classes and CSS custom properties are available. The
-        classes and custom properties are listed under each flag design in the <a
-          href="#flags">Flags</a
-        > section. The custom properties for each color are listed in the <a
-          href="#color-swatches">Color Swatches</a
-        > section if you want to make your own design.
-      </p>
-      <p>
-        With the exception of the Progress design, flags have classes with an
-        aspect ratio and without. Classes without an aspect ratio will conform
-        to whatever dimensions the element has. Classes with an aspect ratio use
-        the <code>aspect-ratio</code> property to change the dimensions of the element
-        to maintain the ratio.
-      </p>
-      <p>
-        When using the classes with aspect ratios, only set the <code
-          >width</code
-        > or <code>height</code> not both, otherwise the aspect ratio will be overridden.
-        Alternatively, you can set both <code>max-width</code> and <code
-          >max-height</code
-        > to maintain the aspect ratio. If you need the flag to keep the aspect ratio
-        and fit inside a box with fixed width and height, you can add a fixed-size
-        wrapper around the element with the flag class and apply <code
-          >max-width</code
-        > and <code>max-height</code> to the flag element. This will make it behave
-        similarly to <code>object-fit: contain</code>.
-      </p>
-      <p>
-        <strong>Notes on the Progress design:</strong> The Progress design only comes
-        in vertical and horizontal orientations because the diagonal gradients simply
-        don't look good. This flag really needs an aspect ratio for the chevron design
-        to work. The CSS classes are the recommended way to use this design, but
-        if you need to use the custom properties to style a pseudo-element, then
-        you'll probably want to apply your own aspect ratio to it. If you need the
-        colors in this design but need it to work without an aspect ratio, try the
-        New Pride design instead.
-      </p>
+      <div class="grid-cols">
+        <div>
+          <p>Use a CSS class</p>
+          <Code
+            code={`<div class="rainbow-horizontal"></div>`}
+            lang="html"
+            wrap
+            theme="github-light"
+            style="background-color: var(--color-light-bg-variant); display: inline-block"
+          />
+          <p>
+            Use a <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties"
+              target="_blank"
+              rel="noreferrer noopener">CSS custom property</a>
+          </p>
+          <Code
+            code={`.my-class {
+  background: var(--rainbow-horizontal);
+}`}
+            lang="css"
+            wrap
+            theme="github-light"
+            style="background-color: var(--color-light-bg-variant); display: inline-block"
+          />
+        </div>
+        <div>
+          <p>
+            Both ready-to-use classes and CSS custom properties are available.
+            The classes and custom properties are listed under each flag design
+            in the <a href="#flags">Flags</a> section. The custom properties for
+            each color are listed in the <a href="#color-swatches"
+              >Color Swatches</a
+            > section if you want to make your own design.
+          </p>
+          <p>
+            With the exception of the Progress design, flags have classes with
+            an aspect ratio and without. Classes without an aspect ratio will
+            conform to whatever dimensions the element has. Classes with an
+            aspect ratio use the <code>aspect-ratio</code> property to change the
+            dimensions of the element to maintain the ratio.
+          </p>
+          <p>
+            When using the classes with aspect ratios, only set the <code
+              >width</code
+            > or <code>height</code> not both, otherwise the aspect ratio will be
+            overridden. Alternatively, you can set both <code>max-width</code> and
+            <code>max-height</code> to maintain the aspect ratio. If you need the
+            flag to keep the aspect ratio and fit inside a box with fixed width and
+            height, you can add a fixed-size wrapper around the element with the
+            flag class and apply <code>max-width</code> and <code
+              >max-height</code
+            > to the flag element. This will make it behave similarly to <code
+              >object-fit: contain</code
+            >.
+          </p>
+          <p>
+            <strong>Notes on the Progress design:</strong> The Progress design only
+            comes in vertical and horizontal orientations because the diagonal gradients
+            simply don't look good. This flag really needs an aspect ratio for the
+            chevron design to work. The CSS classes are the recommended way to use
+            this design, but if you need to use the custom properties to style a
+            pseudo-element, then you'll probably want to apply your own aspect ratio
+            to it. If you need the colors in this design but need it to work without
+            an aspect ratio, try the New Pride design instead.
+          </p>
+        </div>
+      </div>
     </Section>
     <Section>
       <h2 id="flags">Flags</h2>
@@ -428,6 +459,12 @@ const currYear = new Date().getFullYear();
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     gap: var(--spacing-5);
+  }
+
+  .grid-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, max-content));
+    gap: var(--spacing-8);
   }
 
   .browser-support {

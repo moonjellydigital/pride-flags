@@ -19,6 +19,7 @@
   --spacing-5: 1.25rem;
   --spacing-6: 1.5rem;
   --spacing-7: 1.75rem;
+  --spacing-8: clamp(1rem, 0.7391rem + 1.3043vw, 1.75rem);
   --text-display-family: 'DMSans';
   --text-display-fallback: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   --text-display-weight: 400;
@@ -112,6 +113,4 @@
   --text-small-transform: none;
   --text-small-line-height: 1.6;
   --text-small-style: normal;
-  --text-italic-family: 'DMSansItalic';
-  --text-italic-fallback: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }

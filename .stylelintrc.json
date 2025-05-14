@@ -6,7 +6,7 @@
     "**/*.json",
     "**/*.{yaml,yml}",
     "**/*.ttf",
-    "**/*.woff",
+    "**/*.{woff,woff2}",
     "**/LICENSE",
     "**/*.lock",
     "**/*.svg",
