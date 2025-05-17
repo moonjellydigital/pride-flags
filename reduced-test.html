@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flags Classes Reduced Test Case</title>
+    <link rel="stylesheet" href="./pride-flags.css" />
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .flags {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      .flags__row {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(16rem, 1fr));
+        gap: 3rem;
+      }
+
+      .flag {
+        position: relative;
+        min-height: 11rem;
+      }
+
+      .flag__label {
+        position: absolute;
+        left: 0;
+        bottom: -2rem;
+        display: inline-flex;
+        background-color: navajowhite;
+        margin: 0;
+        padding: 0.25rem 0.5rem;
+      }
+
+      @media (min-width: 60rem) {
+        .flags__row {
+          grid-template-columns: repeat(3, minmax(16rem, 1fr));
+          gap: 3rem;
+        }
+      }
+
+      @media (min-width: 84rem) {
+        .flags__row {
+          grid-template-columns: repeat(5, minmax(16rem, 1fr));
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flags Classes Reduced Test Case</h1>
+    <div class="flags">
+      <!-- Baker -->
+      <div class="flags__row">
+        <div class="flag baker-horizontal">
+          <p class="flag__label">.baker-horizontal</p>
+        </div>
+        <div class="flag baker-horizontal-5-3">
+          <p class="flag__label">.baker-horizontal-5-3</p>
+        </div>
+        <div class="flag baker-vertical">
+          <p class="flag__label">.baker-vertical</p>
+        </div>
+        <div class="flag baker-vertical-3-5">
+          <p class="flag__label">.baker-vertical-3-5</p>
+        </div>
+        <div class="flag baker-diagonal">
+          <p class="flag__label">.baker-diagonal</p>
+        </div>
+      </div>
+      <!-- Rainbow -->
+      <div class="flags__row">
+        <div class="flag rainbow-horizontal">
+          <p class="flag__label">.rainbow-horizontal</p>
+        </div>
+        <div class="flag rainbow-horizontal-5-3">
+          <p class="flag__label">.rainbow-horizontal-5-3</p>
+        </div>
+        <div class="flag rainbow-vertical">
+          <p class="flag__label">.rainbow-vertical</p>
+        </div>
+        <div class="flag rainbow-vertical-3-5">
+          <p class="flag__label">.rainbow-vertical-3-5</p>
+        </div>
+        <div class="flag rainbow-diagonal">
+          <p class="flag__label">.rainbow-diagonal</p>
+        </div>
+      </div>
+      <!-- Philadelphia -->
+      <div class="flags__row">
+        <div class="flag philadelphia-horizontal">
+          <p class="flag__label">.philadelphia-horizontal</p>
+        </div>
+        <div class="flag philadelphia-horizontal-5-3">
+          <p class="flag__label">.philadelphia-horizontal-5-3</p>
+        </div>
+        <div class="flag philadelphia-vertical">
+          <p class="flag__label">.philadelphia-vertical</p>
+        </div>
+        <div class="flag philadelphia-vertical-3-5">
+          <p class="flag__label">.philadelphia-vertical-3-5</p>
+        </div>
+        <div class="flag philadelphia-diagonal">
+          <p class="flag__label">.philadelphia-diagonal</p>
+        </div>
+      </div>
+      <!-- Progress -->
+      <div class="flags__row">
+        <div class="flag progress-horizontal-5-3">
+          <p class="flag__label">.progress-horizontal-5-3</p>
+        </div>
+        <div class="flag progress-vertical-3-5">
+          <p class="flag__label">.progress-vertical-3-5</p>
+        </div>
+      </div>
+      <!-- New Pride -->
+      <div class="flags__row">
+        <div class="flag new-pride-horizontal">
+          <p class="flag__label">.new-pride-horizontal</p>
+        </div>
+        <div class="flag new-pride-horizontal-5-3">
+          <p class="flag__label">.new-pride-horizontal-5-3</p>
+        </div>
+        <div class="flag new-pride-vertical">
+          <p class="flag__label">.new-pride-vertical</p>
+        </div>
+        <div class="flag new-pride-vertical-3-5">
+          <p class="flag__label">.new-pride-vertical-3-5</p>
+        </div>
+        <div class="flag new-pride-diagonal">
+          <p class="flag__label">.new-pride-diagonal</p>
+        </div>
+      </div>
+      <!-- Bisexual -->
+      <div class="flags__row">
+        <div class="flag bisexual-horizontal">
+          <p class="flag__label">.bisexual-horizontal</p>
+        </div>
+        <div class="flag bisexual-horizontal-5-3">
+          <p class="flag__label">.bisexual-horizontal-5-3</p>
+        </div>
+        <div class="flag bisexual-vertical">
+          <p class="flag__label">.bisexual-vertical</p>
+        </div>
+        <div class="flag bisexual-vertical-3-5">
+          <p class="flag__label">.bisexual-vertical-3-5</p>
+        </div>
+        <div class="flag bisexual-diagonal">
+          <p class="flag__label">.bisexual-diagonal</p>
+        </div>
+      </div>
+      <!-- Lesbian -->
+      <div class="flags__row">
+        <div class="flag lesbian-horizontal">
+          <p class="flag__label">.lesbian-horizontal</p>
+        </div>
+        <div class="flag lesbian-horizontal-5-3">
+          <p class="flag__label">.lesbian-horizontal-5-3</p>
+        </div>
+        <div class="flag lesbian-vertical">
+          <p class="flag__label">.lesbian-vertical</p>
+        </div>
+        <div class="flag lesbian-vertical-3-5">
+          <p class="flag__label">.lesbian-vertical-3-5</p>
+        </div>
+        <div class="flag lesbian-diagonal">
+          <p class="flag__label">.lesbian-diagonal</p>
+        </div>
+      </div>
+      <!-- Transgender -->
+      <div class="flags__row">
+        <div class="flag transgender-horizontal">
+          <p class="flag__label">.transgender-horizontal</p>
+        </div>
+        <div class="flag transgender-horizontal-5-3">
+          <p class="flag__label">.transgender-horizontal-5-3</p>
+        </div>
+        <div class="flag transgender-vertical">
+          <p class="flag__label">.transgender-vertical</p>
+        </div>
+        <div class="flag transgender-vertical-3-5">
+          <p class="flag__label">.transgender-vertical-3-5</p>
+        </div>
+        <div class="flag transgender-diagonal">
+          <p class="flag__label">.transgender-diagonal</p>
+        </div>
+      </div>
+      <!-- Nonbinary -->
+      <div class="flags__row">
+        <div class="flag nonbinary-horizontal">
+          <p class="flag__label">.nonbinary-horizontal</p>
+        </div>
+        <div class="flag nonbinary-horizontal-5-3">
+          <p class="flag__label">.nonbinary-horizontal-5-3</p>
+        </div>
+        <div class="flag nonbinary-vertical">
+          <p class="flag__label">.nonbinary-vertical</p>
+        </div>
+        <div class="flag nonbinary-vertical-3-5">
+          <p class="flag__label">.nonbinary-vertical-3-5</p>
+        </div>
+        <div class="flag nonbinary-diagonal">
+          <p class="flag__label">nonbinary-diagonal</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
