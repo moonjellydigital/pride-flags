@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.1] - 2025-05-19
+
+### Fixed
+
+Antialiasing calculation was on the wrong set of color stops in linear gradients. Linear gradients now slightly smoother than in 1.2.0.
+
 ## [1.2.0] - 2025-05-17
 
 ### Added
