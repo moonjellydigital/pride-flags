@@ -28,240 +28,240 @@
   --pantone-265-c: oklch(60% 0.0946 305.89deg);
   --nonbinary-horizontal: linear-gradient(
     to bottom,
-    var(--pantone-394-c) 0% calc(25% + 1px),
-    var(--white) 25% calc(50% + 1px),
-    var(--pantone-265-c) 50% calc(75% + 1px),
-    var(--pantone-black-c) 75% 100%
+    var(--pantone-394-c) 0% 25%,
+    var(--white) calc(25% + 1px) 50%,
+    var(--pantone-265-c) calc(50% + 1px) 75%,
+    var(--pantone-black-c) calc(75% + 1px) 100%
   );
   --nonbinary-vertical: linear-gradient(
     to left,
-    var(--pantone-394-c) 0% calc(25% + 1px),
-    var(--white) 25% calc(50% + 1px),
-    var(--pantone-265-c) 50% calc(75% + 1px),
-    var(--pantone-black-c) 75% 100%
+    var(--pantone-394-c) 0% 25%,
+    var(--white) calc(25% + 1px) 50%,
+    var(--pantone-265-c) calc(50% + 1px) 75%,
+    var(--pantone-black-c) calc(75% + 1px) 100%
   );
   --nonbinary-diagonal: linear-gradient(
     225deg,
-    var(--pantone-394-c) 0% calc(25% + 1px),
-    var(--white) 25% calc(50% + 1px),
-    var(--pantone-265-c) 50% calc(75% + 1px),
-    var(--pantone-black-c) 75% 100%
+    var(--pantone-394-c) 0% 25%,
+    var(--white) calc(25% + 1px) 50%,
+    var(--pantone-265-c) calc(50% + 1px) 75%,
+    var(--pantone-black-c) calc(75% + 1px) 100%
   );
   --transgender-horizontal: linear-gradient(
     to bottom,
-    var(--pantone-blue-305-c) 0% calc(20% + 1px),
-    var(--pantone-700-c) 20% calc(40% + 1px),
-    var(--white) 40% calc(60% + 1px),
-    var(--pantone-700-c) 60% calc(80% + 1px),
-    var(--pantone-blue-305-c) 80% 100%
+    var(--pantone-blue-305-c) 0% 20%,
+    var(--pantone-700-c) calc(20% + 1px) 40%,
+    var(--white) calc(40% + 1px) 60%,
+    var(--pantone-700-c) calc(60% + 1px) 80%,
+    var(--pantone-blue-305-c) calc(80% + 1px) 100%
   );
   --transgender-vertical: linear-gradient(
     to left,
-    var(--pantone-blue-305-c) 0% calc(20% + 1px),
-    var(--pantone-700-c) 20% calc(40% + 1px),
-    var(--white) 40% calc(60% + 1px),
-    var(--pantone-700-c) 60% calc(80% + 1px),
-    var(--pantone-blue-305-c) 80% 100%
+    var(--pantone-blue-305-c) 0% 20%,
+    var(--pantone-700-c) calc(20% + 1px) 40%,
+    var(--white) calc(40% + 1px) 60%,
+    var(--pantone-700-c) calc(60% + 1px) 80%,
+    var(--pantone-blue-305-c) calc(80% + 1px) 100%
   );
   --transgender-diagonal: linear-gradient(
     225deg,
-    var(--pantone-blue-305-c) 0% calc(20% + 1px),
-    var(--pantone-700-c) 20% calc(40% + 1px),
-    var(--white) 40% calc(60% + 1px),
-    var(--pantone-700-c) 60% calc(80% + 1px),
-    var(--pantone-blue-305-c) 80% 100%
+    var(--pantone-blue-305-c) 0% 20%,
+    var(--pantone-700-c) calc(20% + 1px) 40%,
+    var(--white) calc(40% + 1px) 60%,
+    var(--pantone-700-c) calc(60% + 1px) 80%,
+    var(--pantone-blue-305-c) calc(80% + 1px) 100%
   );
   --lesbian-horizontal: linear-gradient(
     to bottom,
-    var(--pantone-2349-c) 0% calc(20% + 1px),
-    var(--pantone-1565-c) 20% calc(40% + 1px),
-    var(--white) 40% calc(60% + 1px),
-    var(--pantone-674-c) 60% calc(80% + 1px),
-    var(--pantone-234-c) 80% 100%
+    var(--pantone-2349-c) 0% 20%,
+    var(--pantone-1565-c) calc(20% + 1px) 40%,
+    var(--white) calc(40% + 1px) 60%,
+    var(--pantone-674-c) calc(60% + 1px) 80%,
+    var(--pantone-234-c) calc(80% + 1px) 100%
   );
   --lesbian-vertical: linear-gradient(
     to left,
-    var(--pantone-2349-c) 0% calc(20% + 1px),
-    var(--pantone-1565-c) 20% calc(40% + 1px),
-    var(--white) 40% calc(60% + 1px),
-    var(--pantone-674-c) 60% calc(80% + 1px),
-    var(--pantone-234-c) 80% 100%
+    var(--pantone-2349-c) 0% 20%,
+    var(--pantone-1565-c) calc(20% + 1px) 40%,
+    var(--white) calc(40% + 1px) 60%,
+    var(--pantone-674-c) calc(60% + 1px) 80%,
+    var(--pantone-234-c) calc(80% + 1px) 100%
   );
   --lesbian-diagonal: linear-gradient(
     225deg,
-    var(--pantone-2349-c) 0% calc(20% + 1px),
-    var(--pantone-1565-c) 20% calc(40% + 1px),
-    var(--white) 40% calc(60% + 1px),
-    var(--pantone-674-c) 60% calc(80% + 1px),
-    var(--pantone-234-c) 80% 100%
+    var(--pantone-2349-c) 0% 20%,
+    var(--pantone-1565-c) calc(20% + 1px) 40%,
+    var(--white) calc(40% + 1px) 60%,
+    var(--pantone-674-c) calc(60% + 1px) 80%,
+    var(--pantone-234-c) calc(80% + 1px) 100%
   );
   --bisexual-horizontal: linear-gradient(
     to bottom,
-    var(--pantone-226-c) 0% calc(40% + 1px),
-    var(--pantone-258-c) 40% calc(60% + 1px),
-    var(--pantone-286-c) 60% 100%
+    var(--pantone-226-c) 0% 40%,
+    var(--pantone-258-c) calc(40% + 1px) 60%,
+    var(--pantone-286-c) calc(60% + 1px) 100%
   );
   --bisexual-vertical: linear-gradient(
     to left,
-    var(--pantone-226-c) 0% calc(40% + 1px),
-    var(--pantone-258-c) 40% calc(60% + 1px),
-    var(--pantone-286-c) 60% 100%
+    var(--pantone-226-c) 0% 40%,
+    var(--pantone-258-c) calc(40% + 1px) 60%,
+    var(--pantone-286-c) calc(60% + 1px) 100%
   );
   --bisexual-diagonal: linear-gradient(
     225deg,
-    var(--pantone-226-c) 0% calc(40% + 1px),
-    var(--pantone-258-c) 40% calc(60% + 1px),
-    var(--pantone-286-c) 60% 100%
+    var(--pantone-226-c) 0% 40%,
+    var(--pantone-258-c) calc(40% + 1px) 60%,
+    var(--pantone-286-c) calc(60% + 1px) 100%
   );
   --baker-horizontal: linear-gradient(
     to bottom,
-    var(--pantone-812-c) 0% calc(12.5% + 1px),
-    var(--pantone-2347-c) 12.5% calc(25% + 1px),
-    var(--pantone-2018-c) 25% calc(37.5% + 1px),
-    var(--pantone-3945-c) 37.5% calc(50% + 1px),
-    var(--pantone-356-c) 50% calc(62.5% + 1px),
-    var(--pantone-3262-c) 62.5% calc(75% + 1px),
-    var(--pantone-2726-c) 75% calc(87.5% + 1px),
-    var(--pantone-253-c) 87.5% 100%
+    var(--pantone-812-c) 0% 12.5%,
+    var(--pantone-2347-c) calc(12.5% + 1px) 25%,
+    var(--pantone-2018-c) calc(25% + 1px) 37.5%,
+    var(--pantone-3945-c) calc(37.5% + 1px) 50%,
+    var(--pantone-356-c) calc(50% + 1px) 62.5%,
+    var(--pantone-3262-c) calc(62.5% + 1px) 75%,
+    var(--pantone-2726-c) calc(75% + 1px) 87.5%,
+    var(--pantone-253-c) calc(87.5% + 1px) 100%
   );
   --baker-vertical: linear-gradient(
     to left,
-    var(--pantone-812-c) 0% calc(12.5% + 1px),
-    var(--pantone-2347-c) 12.5% calc(25% + 1px),
-    var(--pantone-2018-c) 25% calc(37.5% + 1px),
-    var(--pantone-3945-c) 37.5% calc(50% + 1px),
-    var(--pantone-356-c) 50% calc(62.5% + 1px),
-    var(--pantone-3262-c) 62.5% calc(75% + 1px),
-    var(--pantone-2726-c) 75% calc(87.5% + 1px),
-    var(--pantone-253-c) 87.5% 100%
+    var(--pantone-812-c) 0% 12.5%,
+    var(--pantone-2347-c) calc(12.5% + 1px) 25%,
+    var(--pantone-2018-c) calc(25% + 1px) 37.5%,
+    var(--pantone-3945-c) calc(37.5% + 1px) 50%,
+    var(--pantone-356-c) calc(50% + 1px) 62.5%,
+    var(--pantone-3262-c) calc(62.5% + 1px) 75%,
+    var(--pantone-2726-c) calc(75% + 1px) 87.5%,
+    var(--pantone-253-c) calc(87.5% + 1px) 100%
   );
   --baker-diagonal: linear-gradient(
     225deg,
-    var(--pantone-812-c) 0% calc(12.5% + 1px),
-    var(--pantone-2347-c) 12.5% calc(25% + 1px),
-    var(--pantone-2018-c) 25% calc(37.5% + 1px),
-    var(--pantone-3945-c) 37.5% calc(50% + 1px),
-    var(--pantone-356-c) 50% calc(62.5% + 1px),
-    var(--pantone-3262-c) 62.5% calc(75% + 1px),
-    var(--pantone-2726-c) 75% calc(87.5% + 1px),
-    var(--pantone-253-c) 87.5% 100%
+    var(--pantone-812-c) 0% 12.5%,
+    var(--pantone-2347-c) calc(12.5% + 1px) 25%,
+    var(--pantone-2018-c) calc(25% + 1px) 37.5%,
+    var(--pantone-3945-c) calc(37.5% + 1px) 50%,
+    var(--pantone-356-c) calc(50% + 1px) 62.5%,
+    var(--pantone-3262-c) calc(62.5% + 1px) 75%,
+    var(--pantone-2726-c) calc(75% + 1px) 87.5%,
+    var(--pantone-253-c) calc(87.5% + 1px) 100%
   );
   --philadelphia-horizontal: linear-gradient(
     to bottom,
-    var(--pantone-black-c) 0% calc(12.5% + 1px),
-    var(--pantone-731-c) 12.5% calc(25% + 1px),
-    var(--pantone-2347-c) 25% calc(37.5% + 1px),
-    var(--pantone-2018-c) 37.5% calc(50% + 1px),
-    var(--pantone-3945-c) 50% calc(62.5% + 1px),
-    var(--pantone-356-c) 62.5% calc(75% + 1px),
-    var(--pantone-2726-c) 75% calc(87.5% + 1px),
-    var(--pantone-253-c) 87.5% 100%
+    var(--pantone-black-c) 0% 12.5%,
+    var(--pantone-731-c) calc(12.5% + 1px) 25%,
+    var(--pantone-2347-c) calc(25% + 1px) 37.5%,
+    var(--pantone-2018-c) calc(37.5% + 1px) 50%,
+    var(--pantone-3945-c) calc(50% + 1px) 62.5%,
+    var(--pantone-356-c) calc(62.5% + 1px) 75%,
+    var(--pantone-2726-c) calc(75% + 1px) 87.5%,
+    var(--pantone-253-c) calc(87.5% + 1px) 100%
   );
   --philadelphia-vertical: linear-gradient(
     to left,
-    var(--pantone-black-c) 0% calc(12.5% + 1px),
-    var(--pantone-731-c) 12.5% calc(25% + 1px),
-    var(--pantone-2347-c) 25% calc(37.5% + 1px),
-    var(--pantone-2018-c) 37.5% calc(50% + 1px),
-    var(--pantone-3945-c) 50% calc(62.5% + 1px),
-    var(--pantone-356-c) 62.5% calc(75% + 1px),
-    var(--pantone-2726-c) 75% calc(87.5% + 1px),
-    var(--pantone-253-c) 87.5% 100%
+    var(--pantone-black-c) 0% 12.5%,
+    var(--pantone-731-c) calc(12.5% + 1px) 25%,
+    var(--pantone-2347-c) calc(25% + 1px) 37.5%,
+    var(--pantone-2018-c) calc(37.5% + 1px) 50%,
+    var(--pantone-3945-c) calc(50% + 1px) 62.5%,
+    var(--pantone-356-c) calc(62.5% + 1px) 75%,
+    var(--pantone-2726-c) calc(75% + 1px) 87.5%,
+    var(--pantone-253-c) calc(87.5% + 1px) 100%
   );
   --philadelphia-diagonal: linear-gradient(
     225deg,
-    var(--pantone-black-c) 0% calc(12.5% + 1px),
-    var(--pantone-731-c) 12.5% calc(25% + 1px),
-    var(--pantone-2347-c) 25% calc(37.5% + 1px),
-    var(--pantone-2018-c) 37.5% calc(50% + 1px),
-    var(--pantone-3945-c) 50% calc(62.5% + 1px),
-    var(--pantone-356-c) 62.5% calc(75% + 1px),
-    var(--pantone-2726-c) 75% calc(87.5% + 1px),
-    var(--pantone-253-c) 87.5% 100%
+    var(--pantone-black-c) 0% 12.5%,
+    var(--pantone-731-c) calc(12.5% + 1px) 25%,
+    var(--pantone-2347-c) calc(25% + 1px) 37.5%,
+    var(--pantone-2018-c) calc(37.5% + 1px) 50%,
+    var(--pantone-3945-c) calc(50% + 1px) 62.5%,
+    var(--pantone-356-c) calc(62.5% + 1px) 75%,
+    var(--pantone-2726-c) calc(75% + 1px) 87.5%,
+    var(--pantone-253-c) calc(87.5% + 1px) 100%
   );
   --rainbow-horizontal: linear-gradient(
     to bottom,
-    var(--pantone-2347-c) 0% calc(16.66% + 1px),
-    var(--pantone-2018-c) 16.66% calc(33.32% + 1px),
-    var(--pantone-3945-c) 33.32% calc(50% + 1px),
-    var(--pantone-356-c) 50% calc(66.68% + 1px),
-    var(--pantone-2726-c) 66.68% calc(83.34% + 1px),
-    var(--pantone-253-c) 83.34% 100%
+    var(--pantone-2347-c) 0% 16.66%,
+    var(--pantone-2018-c) calc(16.66% + 1px) 33.32%,
+    var(--pantone-3945-c) calc(33.32% + 1px) 50%,
+    var(--pantone-356-c) calc(50% + 1px) 66.68%,
+    var(--pantone-2726-c) calc(66.68% + 1px) 83.34%,
+    var(--pantone-253-c) calc(83.34% + 1px) 100%
   );
   --rainbow-vertical: linear-gradient(
     to left,
-    var(--pantone-2347-c) 0% calc(16.66% + 1px),
-    var(--pantone-2018-c) 16.66% calc(33.32% + 1px),
-    var(--pantone-3945-c) 33.32% calc(50% + 1px),
-    var(--pantone-356-c) 50% calc(66.68% + 1px),
-    var(--pantone-2726-c) 66.68% calc(83.34% + 1px),
-    var(--pantone-253-c) 83.34% 100%
+    var(--pantone-2347-c) 0% 16.66%,
+    var(--pantone-2018-c) calc(16.66% + 1px) 33.32%,
+    var(--pantone-3945-c) calc(33.32% + 1px) 50%,
+    var(--pantone-356-c) calc(50% + 1px) 66.68%,
+    var(--pantone-2726-c) calc(66.68% + 1px) 83.34%,
+    var(--pantone-253-c) calc(83.34% + 1px) 100%
   );
   --rainbow-diagonal: linear-gradient(
     225deg,
-    var(--pantone-2347-c) 0% calc(16.66% + 1px),
-    var(--pantone-2018-c) 16.66% calc(33.32% + 1px),
-    var(--pantone-3945-c) 33.32% calc(50% + 1px),
-    var(--pantone-356-c) 50% calc(66.68% + 1px),
-    var(--pantone-2726-c) 66.68% calc(83.34% + 1px),
-    var(--pantone-253-c) 83.34% 100%
+    var(--pantone-2347-c) 0% 16.66%,
+    var(--pantone-2018-c) calc(16.66% + 1px) 33.32%,
+    var(--pantone-3945-c) calc(33.32% + 1px) 50%,
+    var(--pantone-356-c) calc(50% + 1px) 66.68%,
+    var(--pantone-2726-c) calc(66.68% + 1px) 83.34%,
+    var(--pantone-253-c) calc(83.34% + 1px) 100%
   );
   --new-pride-horizontal:
     linear-gradient(
       149deg,
-      var(--white) 0% calc(10% + 1px),
-      var(--pantone-0521-c) 10% calc(20% + 1px),
-      var(--pantone-blue-0821-c) 20% calc(30% + 1px),
-      var(--pantone-2320-c) 30% calc(40% + 1px),
-      var(--pantone-black-6-c) 40% calc(50% + 1px),
-      transparent 50% 100%
+      var(--white) 0% 10%,
+      var(--pantone-0521-c) calc(10% + 1px) 20%,
+      var(--pantone-blue-0821-c) calc(20% + 1px) 30%,
+      var(--pantone-2320-c) calc(30% + 1px) 40%,
+      var(--pantone-black-6-c) calc(40% + 1px) 50%,
+      transparent calc(50% + 1px) 100%
     ),
     linear-gradient(
       to bottom,
-      var(--pantone-2347-c) 0% calc(16.66% + 1px),
-      var(--pantone-2018-c) 16.66% calc(33.32% + 1px),
-      var(--pantone-3945-c) 33.32% calc(50% + 1px),
-      var(--pantone-356-c) 50% calc(66.68% + 1px),
-      var(--pantone-2726-c) 66.68% calc(83.34% + 1px),
-      var(--pantone-253-c) 83.34% 100%
+      var(--pantone-2347-c) 0% 16.66%,
+      var(--pantone-2018-c) calc(16.66% + 1px) 33.32%,
+      var(--pantone-3945-c) calc(33.32% + 1px) 50%,
+      var(--pantone-356-c) calc(50% + 1px) 66.68%,
+      var(--pantone-2726-c) calc(66.68% + 1px) 83.34%,
+      var(--pantone-253-c) calc(83.34% + 1px) 100%
     );
   --new-pride-vertical:
     linear-gradient(
       239deg,
-      var(--white) 0% calc(10% + 1px),
-      var(--pantone-0521-c) 10% calc(20% + 1px),
-      var(--pantone-blue-0821-c) 20% calc(30% + 1px),
-      var(--pantone-2320-c) 30% calc(40% + 1px),
-      var(--pantone-black-6-c) 40% calc(50% + 1px),
-      transparent 50% 100%
+      var(--white) 0% 10%,
+      var(--pantone-0521-c) calc(10% + 1px) 20%,
+      var(--pantone-blue-0821-c) calc(20% + 1px) 30%,
+      var(--pantone-2320-c) calc(30% + 1px) 40%,
+      var(--pantone-black-6-c) calc(40% + 1px) 50%,
+      transparent calc(50% + 1px) 100%
     ),
     linear-gradient(
       to left,
-      var(--pantone-2347-c) 0% calc(16.66% + 1px),
-      var(--pantone-2018-c) 16.66% calc(33.32% + 1px),
-      var(--pantone-3945-c) 33.32% calc(50% + 1px),
-      var(--pantone-356-c) 50% calc(66.68% + 1px),
-      var(--pantone-2726-c) 66.68% calc(83.34% + 1px),
-      var(--pantone-253-c) 83.34% 100%
+      var(--pantone-2347-c) 0% 16.66%,
+      var(--pantone-2018-c) calc(16.66% + 1px) 33.32%,
+      var(--pantone-3945-c) calc(33.32% + 1px) 50%,
+      var(--pantone-356-c) calc(50% + 1px) 66.68%,
+      var(--pantone-2726-c) calc(66.68% + 1px) 83.34%,
+      var(--pantone-253-c) calc(83.34% + 1px) 100%
     );
   --new-pride-diagonal:
     linear-gradient(
       194deg,
-      var(--white) 0% calc(10% + 1px),
-      var(--pantone-0521-c) 10% calc(20% + 1px),
-      var(--pantone-blue-0821-c) 20% calc(30% + 1px),
-      var(--pantone-2320-c) 30% calc(40% + 1px),
-      var(--pantone-black-6-c) 40% calc(50% + 1px),
-      transparent 50% 100%
+      var(--white) 0% 10%,
+      var(--pantone-0521-c) calc(10% + 1px) 20%,
+      var(--pantone-blue-0821-c) calc(20% + 1px) 30%,
+      var(--pantone-2320-c) calc(30% + 1px) 40%,
+      var(--pantone-black-6-c) calc(40% + 1px) 50%,
+      transparent calc(50% + 1px) 100%
     ),
     linear-gradient(
       225deg,
-      var(--pantone-2347-c) 0% calc(16.66% + 1px),
-      var(--pantone-2018-c) 16.66% calc(33.32% + 1px),
-      var(--pantone-3945-c) 33.32% calc(50% + 1px),
-      var(--pantone-356-c) 50% calc(66.68% + 1px),
-      var(--pantone-2726-c) 66.68% calc(83.34% + 1px),
-      var(--pantone-253-c) 83.34% 100%
+      var(--pantone-2347-c) 0% 16.66%,
+      var(--pantone-2018-c) calc(16.66% + 1px) 33.32%,
+      var(--pantone-3945-c) calc(33.32% + 1px) 50%,
+      var(--pantone-356-c) calc(50% + 1px) 66.68%,
+      var(--pantone-2726-c) calc(66.68% + 1px) 83.34%,
+      var(--pantone-253-c) calc(83.34% + 1px) 100%
     );
   --progress-horizontal:
     conic-gradient(
@@ -296,13 +296,13 @@
     ),
     linear-gradient(
       to bottom,
-      var(--pantone-2347-c) 0% calc(16.66% + 1px),
-      var(--pantone-2018-c) 16.66% calc(33.32% + 1px),
+      var(--pantone-2347-c) 0% 16.66%,
+      var(--pantone-2018-c) calc(16.66% + 1px) 33.32%,
       /* No blur on next line because tip of chevron not lining up was worse than slightly jagged gradient. */
         var(--pantone-3945-c) 33.32% 50%,
-      var(--pantone-356-c) 50% calc(66.68% + 1px),
-      var(--pantone-2726-c) 66.68% calc(83.34% + 1px),
-      var(--pantone-253-c) 83.34% 100%
+      var(--pantone-356-c) calc(50% + 1px) 66.68%,
+      var(--pantone-2726-c) calc(66.68% + 1px) 83.34%,
+      var(--pantone-253-c) calc(83.34% + 1px) 100%
     );
   --progress-vertical:
     conic-gradient(
@@ -337,13 +337,13 @@
     ),
     linear-gradient(
       270deg,
-      var(--pantone-2347-c) 0% calc(16.66% + 1px),
-      var(--pantone-2018-c) 16.66% calc(33.32% + 1px),
+      var(--pantone-2347-c) 0% 16.66%,
+      var(--pantone-2018-c) calc(16.66% + 1px) 33.32%,
       /* No blur on next line because tip of chevron not lining up was worse than slightly jagged gradient. */
         var(--pantone-3945-c) 33.32% 50%,
-      var(--pantone-356-c) 50% calc(66.68% + 1px),
-      var(--pantone-2726-c) 66.68% calc(83.34% + 1px),
-      var(--pantone-253-c) 83.34% 100%
+      var(--pantone-356-c) calc(50% + 1px) 66.68%,
+      var(--pantone-2726-c) calc(66.68% + 1px) 83.34%,
+      var(--pantone-253-c) calc(83.34% + 1px) 100%
     );
 }
 
