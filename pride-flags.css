@@ -299,7 +299,7 @@
       var(--pantone-2347-c) 0% 16.66%,
       var(--pantone-2018-c) calc(16.66% + 1px) 33.32%,
       /* No blur on next line because tip of chevron not lining up was worse than slightly jagged gradient. */
-        var(--pantone-3945-c) 33.32% 50%,
+      var(--pantone-3945-c) 33.32% 50%,
       var(--pantone-356-c) calc(50% + 1px) 66.68%,
       var(--pantone-2726-c) calc(66.68% + 1px) 83.34%,
       var(--pantone-253-c) calc(83.34% + 1px) 100%
@@ -340,7 +340,7 @@
       var(--pantone-2347-c) 0% 16.66%,
       var(--pantone-2018-c) calc(16.66% + 1px) 33.32%,
       /* No blur on next line because tip of chevron not lining up was worse than slightly jagged gradient. */
-        var(--pantone-3945-c) 33.32% 50%,
+      var(--pantone-3945-c) 33.32% 50%,
       var(--pantone-356-c) calc(50% + 1px) 66.68%,
       var(--pantone-2726-c) calc(66.68% + 1px) 83.34%,
       var(--pantone-253-c) calc(83.34% + 1px) 100%
