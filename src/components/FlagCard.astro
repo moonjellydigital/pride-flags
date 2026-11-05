@@ -28,44 +28,50 @@ const {
 ---
 
 <div class="flag-card" {...attrs}>
-  <div class="flag-card__flag" style={{ background: `var(${horizProperty})` }}>
-  </div>
+  <div
+    class="flag-card__flag"
+    style={{ background: `var(${horizProperty})` }}
+  ></div>
   <div class="flag-card__text">
     <h3 class="flag-card__heading">{heading}</h3>
-    <p><b>CSS Properties</b></p>
-    <p>Horizontal: <code>{horizProperty}</code></p>
-    <p>Vertical: <code>{vertProperty}</code></p>
-    {
-      diagProperty && (
-        <p>
-          Diagonal: <code>{diagProperty}</code>
-        </p>
-      )
-    }
-    <p><b>CSS Classes</b></p>
-    {
-      horizClass && (
-        <p>
-          Horizontal: <code>{horizClass}</code>
-        </p>
-      )
-    }
-    <p>Horizontal, 5:3: <code>{horiz53Class}</code></p>
-    {
-      vertClass && (
-        <p>
-          Vertical: <code>{vertClass}</code>
-        </p>
-      )
-    }
-    <p>Vertical, 3:5: <code>{vert35Class}</code></p>
-    {
-      diagClass && (
-        <p>
-          Diagonal: <code>{diagClass}</code>
-        </p>
-      )
-    }
+    <p>
+      <b>CSS Properties</b>
+    </p>
+    <p>
+      Horizontal: <code>{horizProperty}</code>
+    </p>
+    <p>
+      Vertical: <code>{vertProperty}</code>
+    </p>
+    {diagProperty && (
+      <p>
+        Diagonal: <code>{diagProperty}</code>
+      </p>
+    )}
+    <p>
+      <b>CSS Classes</b>
+    </p>
+    {horizClass && (
+      <p>
+        Horizontal: <code>{horizClass}</code>
+      </p>
+    )}
+    <p>
+      Horizontal, 5:3: <code>{horiz53Class}</code>
+    </p>
+    {vertClass && (
+      <p>
+        Vertical: <code>{vertClass}</code>
+      </p>
+    )}
+    <p>
+      Vertical, 3:5: <code>{vert35Class}</code>
+    </p>
+    {diagClass && (
+      <p>
+        Diagonal: <code>{diagClass}</code>
+      </p>
+    )}
   </div>
 </div>
 
